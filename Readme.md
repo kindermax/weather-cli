@@ -8,6 +8,14 @@ This is a simple c++ cli which calls https://home.openweathermap api
 cmake -S . -B build && cmake --build build
 ```
 
+## Development
+
+In order for nvim lsp to understand the project, you need to generate compile_commands.json file:
+
+```bash 
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+```
+
 ## Run
 
 ```bash

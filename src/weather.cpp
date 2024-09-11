@@ -1,9 +1,10 @@
+#include <cpr/cpr.h>
+
 #include <cstdlib>
 #include <iostream>
 #include <memory>
-
-#include <cpr/cpr.h>
 #include <nlohmann/json.hpp>
+#include <string>
 
 using json = nlohmann::json;
 
@@ -11,7 +12,7 @@ constexpr const char *const API_URL =
     "https://api.openweathermap.org/data/2.5/weather";
 
 class WeatherInfo {
-public:
+ public:
   std::string city;
   std::float_t temperature;
   std::float_t temperature_feels_like;
